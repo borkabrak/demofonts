@@ -2,3 +2,11 @@ FONT DEMO
 =========
 
 Try out fonts on the fly, using the Google font database.
+
+Try the [demo](https://borkabrak.org/demofonts)
+
+TODO
+====
+
+* Add error handling for non-existent fonts
+* Dynamically add/remove example sections via AJAX
