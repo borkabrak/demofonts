@@ -1,17 +1,29 @@
-$main: #226E48;
-$accent: rgb(184, 215, 178);
+$main: rgb(34, 110, 72);
+$focal: rgb(184, 215, 178);
+$accent: rgb(54, 82, 84);
 
 body {
     background: $main;
 }
 
+input {
+    background: rgb(54, 82, 84);
+    border-color: rgb(54, 82, 84);
+    border-style: none;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    color: white;
+    margin-left: 10%;
+}
+
 .sample {
-    border: solid black;
+    border-style: solid;
+    border-color: $accent;
     border-radius: 1.5em;
     padding: 1.5em;
     width: 60%;
     margin: 1em;
-    background: $accent;
+    background: $focal;
     margin-left: 10%;
 
 }

@@ -50,9 +50,8 @@
 <h1>Fonts Demo</h1>
 
 <form>
-    <input name="newfont" placeholder="Add new fonts here">
+    <input name="newfont" placeholder="New font name…">
     <input type="hidden" name="fonts" value="<?= implode(',', $fonts) ?>">
-    <a href="#">Clear</a>
 </form>
 
 <?php foreach ($fonts as $font){ ?>
