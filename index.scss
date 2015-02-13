@@ -1,0 +1,17 @@
+$main: #226E48;
+$accent: rgb(184, 215, 178);
+
+body {
+    background: $main;
+}
+
+.sample {
+    border: solid black;
+    border-radius: 1.5em;
+    padding: 1.5em;
+    width: 60%;
+    margin: 1em;
+    background: $accent;
+    margin-left: 10%;
+
+}

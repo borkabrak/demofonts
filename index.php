@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <?php
     // Add font names here for lookup on Google Fonts
     $fonts = array(
@@ -18,8 +17,8 @@
 
         $fonts = array(
                 'Lato',
-                //'Playfair Display',
-                //'Roboto',
+                'Playfair Display',
+                'Roboto',
                 //'Oswald',
                 //'Raleway',
             );
@@ -31,18 +30,22 @@
     fighting—on our side or theirs. We had all the momentum; we were riding the
     crest of a high and beautiful wave.…";
 ?>
+<!DOCTYPE html>
 <html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="description" content="A tool for previewing fonts available through Google Fonts">
+
+<link rel="stylesheet" href="index.css">
 
 <?php foreach($fonts as $font){ ?>
 <link href='http://fonts.googleapis.com/css?family=<?= $font ?>' rel='stylesheet' type='text/css'>
 <? } ?>
 
-<meta charset="UTF-8">
 <title>Fonts Demo</title>
 </head>
 
-<body style="background-color: rgb(200, 193, 174)">
+<body>
 
 <h1>Fonts Demo</h1>
 
@@ -53,7 +56,7 @@
 </form>
 
 <?php foreach ($fonts as $font){ ?>
-    <div style='font-family: "<?= $font ?>"'><h2><?= $font ?>:</h2> <p><?= $sample_text ?></div>
+    <div class="sample" style='font-family: "<?= $font ?>"'><h2><?= $font ?>:</h2> <p><?= $sample_text ?></div>
 <?  } ?>
 
 </body>
