@@ -47,7 +47,7 @@
 
 <body>
 
-<h1>Fonts Demo</h1>
+<h1 id="title">Fonts Demo</h1>
 
 <form>
     <input name="newfont" placeholder="New font name…">
