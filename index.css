@@ -1,0 +1,33 @@
+body {
+  background: #226e48; }
+
+#title {
+  font-family: "Lato", sans-serif;
+  background: linear-gradient(90deg, #365254, #226e48);
+  color: #b8d7b2;
+  border-top-left-radius: 0.5em;
+  border-bottom-left-radius: 0.5em;
+  padding: 0.5em;
+  width: 40%;
+  margin-left: 5%; }
+
+input {
+  background: #365254;
+  background: white;
+  border-color: #365254;
+  border-style: none;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  margin-left: 10%; }
+
+.sample {
+  border-style: solid;
+  border-color: #365254;
+  border-radius: 1.5em;
+  padding: 1.5em;
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 60%;
+  margin: 1em;
+  background: #b8d7b2;
+  margin-left: 10%; }
