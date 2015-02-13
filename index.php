@@ -1,4 +1,8 @@
 <?php
+
+    // App title
+    $title = "Google Fonts Demo";
+
     // Add font names here for lookup on Google Fonts
     $fonts = array(
           'Lato',
@@ -42,12 +46,12 @@
 <link href='http://fonts.googleapis.com/css?family=<?= $font ?>' rel='stylesheet' type='text/css'>
 <? } ?>
 
-<title>Fonts Demo</title>
+<title><?= $title ?></title>
 </head>
 
 <body>
 
-<h1 id="title">Fonts Demo</h1>
+<h1 id="title"><?= $title ?></h1>
 
 <form>
     <input name="newfont" placeholder="New font name…">
