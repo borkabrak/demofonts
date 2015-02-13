@@ -11,14 +11,14 @@
     if ($_GET['fonts']) {
 
         $fonts = explode(",", $_GET['fonts']);
-        array_push($fonts, $_GET['newfont'] );
+        array_unshift($fonts, $_GET['newfont'] );
 
     } else {
 
         $fonts = array(
                 'Lato',
-                'Playfair Display',
-                'Roboto',
+                //'Playfair Display',
+                //'Roboto',
                 //'Oswald',
                 //'Raleway',
             );
