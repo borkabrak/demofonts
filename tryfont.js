@@ -18,14 +18,19 @@ function createFontLink(name){
 }
 
 function checkFont(name){
+
+    // Return whether a given font is available via Google Fonts
     
-    //var xhr = new XMLHttpRequest();
+    console.log("Checking font availability..");
+    var xhr = new XMLHttpRequest();
 
-    //xhr.open("GET", "http://fonts.googleapis.com/css?family=", true);
+    xhr.open("GET", "http://fonts.googleapis.com/css?family=" + name, true);
 
-    //xhr.onreadystatechange = function(){
-    //    if (xhr.status == 
-    //};
+    xhr.onreadystatechange = function(){
+        console.log("xhr changed state:%o", xhr);
+    };
+    xhr.send();
+
     return true;
 }
 
