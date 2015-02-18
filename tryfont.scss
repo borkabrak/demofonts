@@ -1,0 +1,42 @@
+$main: rgb(34, 110, 72);
+$focal: rgb(184, 215, 178);
+$accent: rgb(54, 82, 84);
+
+body {
+    background: $main;
+}
+
+header {
+    font-family: "Lato", sans-serif;
+    font-size: 1.3em;
+    background: linear-gradient(90deg, $accent, $main);
+    color: $focal;
+    border-top-left-radius: 20%;
+    border-bottom-left-radius: 0;
+    width: 40%;
+    margin-left: 5%;
+    padding: 0.5em;
+    
+}
+
+input {
+    background: rgb(54, 82, 84);
+    background: white;
+    border-color: rgb(54, 82, 84);
+    border-style: none;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    margin-left: 10%;
+}
+
+#samples div {
+    border-style: solid;
+    border-color: $accent;
+    border-radius: 1.5em;
+    padding: 1.5em;
+    width: 60%;
+    margin: 1em;
+    background: $focal;
+    margin-left: 10%;
+
+}
