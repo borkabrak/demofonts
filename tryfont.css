@@ -4,12 +4,14 @@ body {
 header {
   font-family: "Lato", sans-serif;
   font-size: 1.3em;
-  background: linear-gradient(90deg, #365254, #226e48);
+  background: linear-gradient(270deg, #71b9be, #226e48);
   color: #b8d7b2;
-  border-top-left-radius: 20%;
+  border-top-right-radius: 100%;
   border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0.5em;
   width: 40%;
   margin-left: 5%;
+  margin-bottom: 1em;
   padding: 0.5em; }
 
 input {
@@ -23,7 +25,7 @@ input {
 
 #samples div {
   border-style: solid;
-  border-color: #365254;
+  border-color: #71b9be;
   border-radius: 1.5em;
   padding: 1.5em;
   width: 60%;
