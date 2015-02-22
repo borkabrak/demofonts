@@ -14,7 +14,7 @@ header {
   margin-bottom: 1em;
   padding: 0.5em; }
 
-input {
+input, button {
   background: #365254;
   background: white;
   border-color: #365254;

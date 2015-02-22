@@ -14,42 +14,32 @@ function createFontLink(name){
     link.rel = "stylesheet";
     link.type = "text/css";
     link.href = "http://fonts.googleapis.com/css?family=" + name;
-    return link;
-}
-
-function checkFont(name){
-
-    // Return whether a given font is available via Google Fonts
-    
-    console.log("Checking font availability..");
-    var xhr = new XMLHttpRequest();
-
-    xhr.open("GET", "http://fonts.googleapis.com/css?family=" + name, true);
-
-    xhr.onreadystatechange = function(){
-        console.log("xhr changed state:%o", xhr);
+    link.onload = function(event){
+        console.log("Font imported: %s", event.target.href);
+        document.getElementById("samples").appendChild(createSample(name));
     };
-    xhr.send();
 
-    return true;
+    link.onerror = function(event){
+        console.log("Error importing font: %s", event.target.href);
+        document.getElementById("samples").appendChild(createSample(name));
+    };
+
+    return link;
 }
 
 // Document.ready..
 var tid = setInterval( function () {
     if ( document.readyState !== 'complete' ) return;
-    clearInterval( tid );       
+    clearInterval( tid );
 
     document.querySelector("form#addfont").onsubmit = function (){
         var name = this.newfont.value;
 
-        if (checkFont(name)){
-            document.head.appendChild(createFontLink(name));
-            document.getElementById("samples").appendChild(createSample(name));
-        } else {
-            console.log(name + " does not exist");
-        }
+        document.head.appendChild(createFontLink(name));
 
         return false;
     }
+
+    document.querySelector("input").focus();
 
 }, 100 );
